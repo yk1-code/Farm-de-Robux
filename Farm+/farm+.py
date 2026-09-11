@@ -18,9 +18,9 @@ def open_browsers():
     py.press("enter")
     sleep(5)
     py.hotkey("win", "right")
-    sleep(5)
+    sleep(7)
     py.write("https://www.bing.com/")
-    sleep(1.5)
+    sleep(3)
     py.press("enter")
 def init_serch():
     py.PAUSE_TIME = 5
@@ -232,8 +232,11 @@ def init_serch():
     for n in range(20):
         pontos()
 def Definido_diariamente():
+    sleep(3)
     py.click(x=1349, y=21)
     py.click(x=1349, y=21)
+    py.hotkey("ctrl", "a")
+    py.press("backspace")
     py.write("https://www.bing.com/rewards/dashboard")
     py.press("enter")
     sleep(1)
