@@ -231,26 +231,26 @@ def init_serch():
 
     for n in range(20):
         pontos()
-def Definido_diariamente():
+def Definido_diariamente(x, y):
     sleep(3)
-    py.click(x=1349, y=21)
-    py.click(x=1349, y=21)
+    py.click(x=x, y=y)
+    sleep(1)
     py.hotkey("ctrl", "a")
     py.press("backspace")
     py.write("https://www.bing.com/rewards/dashboard")
     py.press("enter")
+    sleep(5)
+    py.moveTo(x=(x - 121), y=(y+ 355))
     sleep(1)
-    py.moveTo(x=1470, y=376)
-    sleep
-    for n in range(11):
+    for n in range(12):
         py.scroll(-100)
     sleep(2)     
     with py.hold("ctrl"):
-        py.click(x=1371, y=499)
+        py.click(x=(x - 89), y=499)
         sleep(0.25)
-        py.click(x=1371, y=673)
+        py.click(x=(x - 89), y=673)
         sleep(0.25)
-        py.click(x=1371, y=877)
+        py.click(x=(x - 89), y=877)
         sleep(0.25)    
 def browsers():
       py.click(x=1897, y=34)
@@ -258,8 +258,10 @@ def browsers():
       py.click(x=916, y=43)
 def code():
     open_browsers()
+    sleep(1)
     init_serch()
-    Definido_diariamente()
+    Definido_diariamente(1460, 21)
+    Definido_diariamente(250, 35)
     browsers()
     exit()
 
