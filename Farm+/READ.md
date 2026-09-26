@@ -1,22 +1,39 @@
 # Farm+
 
-## Como funciona:
-Esse programa faz pesquisas automáticas no bing para obter os pontos. Com esse programa ele faz até 90 pontos por dia, o resto dos pontos é pelo celular. A ideia é deixar o computador ligado enquanto ele pesquisa automaticamente por você
+## How to download:
 
-## Como configurar:
-Para configirar basta conectar duas contas da sua preferência nos navegadores do Edge e FireFox, caso queira outros navegadores basta consfigurar no código fonte.
+Access the executable file and download it with the GitHub option.
 
+## How it works:
 
-## Aviso
-O programa não está completamente pronto. Sou iniciante e estou usando este projeto para aprimorar minha lógica enquanto eu uso no meu dia dia para me recompensar com alguns robux. 
-Aceito sugestões, estou aqui para evolir como programador.
+This program does automatic searches in bing to get the points. With this program he makes up to 90 points per day, the rest of the points is by cell phone. The idea is to leave the computer on while it automatically searches for you
 
-### Ideias
-Aqui estão algumas das ideias que já tenho em mente para aprimorar o programa:
-- Criar uma interface
-- Criar uma parte de configuração, onde só precisa configurar uma vez
-- Ao invés de clickar em uma posição específica ele vai analisar os elementos da tela, assim tendo uma margem de erro muito menor para diversas resoluções
-Quando eu for aprendendo mais eu venho desenvolver essas ideias. 
+## How to configure:
 
-### Proximo passo...
-Sugerido pelo úsuario "Rukafuu" estou fazendo um sistema onde vou separar as palavras em categorias com arquivos diferentes e depois juntar.
+To configure just connect two accounts of your choice in the Edge and FireFox browsers, if you want other browsers just configure in the source code.
+
+## Warning
+
+The program is not completely ready. I'm a beginner and I'm using this project to improve my logic while I use it in my daily life to reward myself with some robux.
+
+I'm using a translator because I'm still a beginner and don't know how to write much in English; I'm better at reading it.
+
+I accept suggestions, I'm here to evolve as a programmer.
+
+### Ideas
+
+Here are some of the ideas I already have in mind to improve the program:
+
+- Create an interface
+
+- Create a configuration part, where you only need to configure once
+
+- Instead of clicking in a specific position it will analyze the elements of the screen, thus having a much smaller margin of error for several resolutions
+
+When I learn more I come to develop these ideas.
+
+- Add settings that need to be configured only once.
+
+### Next step...
+
+Suggested by the user "Rukafuu" I'm making a system where I'll separate the words into categories with different files and then join.
