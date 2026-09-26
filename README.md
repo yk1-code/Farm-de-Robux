@@ -19,6 +19,7 @@ Aqui estão algumas das ideias que já tenho em mente para aprimorar o programa:
 - Criar uma parte de configuração, onde só precisa configurar uma vez
 - Ao invés de clickar em uma posição específica ele vai analisar os elementos da tela, assim tendo uma margem de erro muito menor para diversas resoluções
 Quando eu for aprendendo mais eu venho desenvolver essas ideias. 
+- Adicionar configurações que precisem ser configuradas apenas uma vez.
 
 ### Proximo passo...
 Sugerido pelo úsuario "Rukafuu" estou fazendo um sistema onde vou separar as palavras em categorias com arquivos diferentes e depois juntar.
