@@ -3,6 +3,9 @@ import pyautogui as py
 import random
 from sys import exit
 
+fire_fox_search = py.position(x=1430, y=107)
+edge_search = py.position(x=394, y=116)
+
 def open_browsers():
     py.PAUSE_TIME = 5
     py.press("win")
@@ -22,18 +25,20 @@ def open_browsers():
     py.write("https://www.bing.com/")
     sleep(3)
     py.press("enter")
+
+def bet():
+    x = random.randint(1, 100)
+    py.write(str(x))
+    py.press("enter")
 def init_serch():
     py.PAUSE_TIME = 5
-    py.click(x=367, y=370)
-    x = random.randint(1, 100)
-    py.write(str(x))
-    py.press("enter")
+    py.click(x=1230, y=290)
+    bet()
     sleep(2.5)
-    py.click(x=1394, y=364)
+    py.click(fire_fox_search)
     sleep(1)
-    x = random.randint(1, 100)
-    py.write(str(x))
-    py.press("enter")
+    bet()
+    sleep(2.5)
 
     pesquisas = [
     "abacaxi", "abelha", "abóbora", "abraço", "abrigo", "acampamento", "açúcar", "água",
@@ -211,32 +216,28 @@ def init_serch():
         py.write(str(random.choice(pesquisas)))
         py.press("enter")
         sleep(3.5)
+    def loop_pesquisa(x):
+        py.click(x)
+        sleep(0.25)
+        py.hotkey("ctrl", "a")
+        py.press("backspace")
+        sleep(0.25)
+        pesquisa()
 
     def pontos():
-        py.click(x=342, y=113)
-        sleep(0.25)
-        py.hotkey("ctrl", "a")
-        py.press("backspace")
-        sleep(0.25)
-        pesquisa()
-        py.click(x=1553, y=106)
-        sleep(0.25)
-        py.hotkey("ctrl", "a")
-        py.press("backspace")
-        pesquisa()
+        loop_pesquisa(edge_search)
+        loop_pesquisa(fire_fox_search)
         sleep(5)
-    
 
-    pontos()
-
-    for n in range(20):
+    for n in range(1):
         pontos()
+
 def Definido_diariamente(x, y):
     sleep(3)
     py.click(x=x, y=y)
     sleep(1)
-    py.hotkey("ctrl", "a")
-    py.press("backspace")
+    py.hotkey("ctrl", "t")
+    sleep(1)
     py.write("https://www.bing.com/rewards/dashboard")
     py.press("enter")
     sleep(5)
@@ -246,23 +247,22 @@ def Definido_diariamente(x, y):
         py.scroll(-100)
     sleep(2)     
     with py.hold("ctrl"):
-        py.click(x=(x - 89), y=499)
+        py.click(x=(x - 89), y=386)
         sleep(0.25)
-        py.click(x=(x - 89), y=673)
+        py.click(x=(x - 89), y=552)
         sleep(0.25)
-        py.click(x=(x - 89), y=877)
+        py.click(x=(x - 89), y=724)
         sleep(0.25)    
 def browsers():
       py.click(x=1897, y=34)
       sleep(0.5)
       py.click(x=916, y=43)
-def code():
-    open_browsers()
-    sleep(1)
-    init_serch()
-    Definido_diariamente(1460, 21)
-    Definido_diariamente(250, 35)
-    browsers()
-    exit()
 
-code()
+open_browsers()
+sleep(1)
+init_serch()
+Definido_diariamente(1460, 21)
+Definido_diariamente(250, 35)
+browsers()
+exit()
+
