@@ -5,6 +5,7 @@ from sys import exit
 
 fire_fox_search = py.position(x=1430, y=107)
 edge_search = py.position(x=394, y=116)
+numero_de_pesquisas = 20
 
 def open_browsers():
     py.PAUSE_TIME = 5
@@ -229,7 +230,7 @@ def init_serch():
         loop_pesquisa(fire_fox_search)
         sleep(5)
 
-    for n in range(1):
+    for n in range(numero_de_pesquisas):
         pontos()
 
 def Definido_diariamente(x, y):
@@ -247,12 +248,11 @@ def Definido_diariamente(x, y):
         py.scroll(-100)
     sleep(2)     
     with py.hold("ctrl"):
-        py.click(x=(x - 89), y=386)
-        sleep(0.25)
-        py.click(x=(x - 89), y=552)
-        sleep(0.25)
-        py.click(x=(x - 89), y=724)
-        sleep(0.25)    
+        v = 0
+        for _ in range(3):
+            py.click(x=(x - 89), y=(v + 480))
+            v += 150
+            sleep(0.25)
 def browsers():
       py.click(x=1897, y=34)
       sleep(0.5)
@@ -264,5 +264,4 @@ init_serch()
 Definido_diariamente(1460, 21)
 Definido_diariamente(250, 35)
 browsers()
-exit()
-
+exit() 
